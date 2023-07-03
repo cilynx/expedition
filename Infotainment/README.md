@@ -34,4 +34,4 @@ Who needs model numbers when you can have awesome SEO-driven product names like 
 | GPS | Works with the antenna that comes with the headunit shoved up under the dash.  Can take a minute to get lock if you don't power it up every day.  Not working with the stock Expedition antenna at this time. Can take quite a while to get lock the very first time -- try sticking the antenna on the roof to get the initial lock before hiding it in the dash. |
 | YouTube | Pre-installed and working OOTB |
 | Netflix | Not available in the Play Store for Android 9.  If you write to KSPIV support, they'll send you an APK that works along with instructions on how to side-load it. |
-| Play Store | Crashed a lot at first.  After finding a work-around to updating Play Store itself, it now works as it should. |
+| Play Store | Crashed a lot at first.  After finding a work-around to updating Play Store itself, it now works as it should.  Some apps are not available as the head is running Android 9 which is pretty outdated.  KSPIV is working on an Android 11 firmware for this unit that should improve the situation. |
