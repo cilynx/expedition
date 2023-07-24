@@ -44,7 +44,11 @@ BO_ 2147483779 Lights: 8 BCM
    SG_ HighBeams : 2|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483777 LeftSteeringWheelControls: 8 BCM
-   SG_ LeftSteeringWheelControls : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Down : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Left : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Right : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Up : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ Ok : 4|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
@@ -57,4 +61,3 @@ BA_DEF_DEF_ "filterlabeling" 1;
 VAL_ 2147483779 RightTurnSignal 1 "RightTurnSignal";
 VAL_ 2147483779 LeftTurnSignal 1 "LeftTurnSignal";
 VAL_ 2147483779 HighBeams 1 "HighBeams";
-VAL_ 2147483777 LeftSteeringWheelControls 1 "DownArrow" 2 "LeftArrow" 4 "RightArrow" 8 "UpArrow" 10 "Ok" 0 "NothingPressed";
