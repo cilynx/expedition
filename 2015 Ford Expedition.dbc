@@ -38,10 +38,15 @@ BO_ 2147484161 Speeds: 8 ECM
    SG_ AcceleratorPosition-NC : 47|8@0+ (0.5,0) [0|1] "%" Vector__XXX
    SG_ VehicleSpeed-NC : 31|16@0+ (0.01,0) [0|1] "%" Vector__XXX
 
-BO_ 2147483779 Lights: 8 BCM
+BO_ 2147483779 LightsAndCruiseControl: 8 BCM
    SG_ RightTurnSignal : 0|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ LeftTurnSignal : 1|1@0+ (1,0) [0|1] "" Vector__XXX
    SG_ HighBeams : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ CruiseControlOn : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ CruiseControlOff : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ CruiseControlCancelResume : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ CruiseControlSet+ : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ CruiseControlSet- : 32|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483777 LeftSteeringWheelControls: 8 BCM
    SG_ Down : 0|1@0+ (1,0) [0|1] "" Vector__XXX
