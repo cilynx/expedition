@@ -12,53 +12,53 @@ Who needs model numbers when you can have awesome SEO-driven product names like 
 
 ## Features
 
-| Feature | Does it work? | Issue |
+| Feature | Notes | Issue |
 | - | - | - |
 | Screen | Works OOTB -- vibrant and crisp |
 | Split Screen | Works OOTB, but not all apps support it |
-| Reverse View | Cam view app works OOTB for rear, front, and side inputs.  Screen goes black when vehicle is in reverse so long as the reverse wire with the bullet end is grounded.  The reverse cam doesn't show up though.  After putting the vehicle back in gear, you have to select the radio again to turn the amp back on. |
+| Factory Rear View Camera | Plug-and-play.  Cam View app works OOTB for rear, front, and side inputs.  Screen goes black when vehicle is in reverse so long as the reverse wire with the bullet end is grounded, but the reverse cam doesn't show up.  After putting the vehicle back in drive, you have to select the Radio app again to turn the amp back on. | https://github.com/cilynx/expedition/issues/1 |
 | Touch | Works OOTB including multi-touch gestures like pinch/zoom/drag, even with gloves on |
-| Autodimming | Works OK OOTB, but doesn't go dim enough for night driving.  Twilight installed from the Play Store does the job better. |
-| Virtual Assistant | Barely works -- you don't actually need it and I'd rather disable the overlay, but haven't figured out how to yet.  May need to follow up with KSPIV. |
+| Autodimming | Works OK OOTB, but doesn't dim enough for night driving even with Waze in dark mode.  Twilight installed from the Play Store does the job, but this should be built in. | https://github.com/cilynx/expedition/issues/5, [Sergey's workaround](https://www.facebook.com/groups/tesla.style.FW.HU/posts/2174834042824357/) |
+| Virtual Assistant | Barely works -- you don't actually need it and I'd rather disable the overlay, but haven't figured out how to yet. |
 | Android Auto | Works over USB and Bluetooth, but I'll never use it as native apps are nicer. |
-| Cabin Mood Lighting | Has an app that matches the colors of the stock color switcher, but it doesn't seem to do anything.  I'm guessing it runs over the CAN2 connection that doesn't work.  Need to follow up with KSPIV. |
+| Cabin Ambient Lighting | Has an app that matches the colors of the factory color switcher, but it doesn't work. | https://github.com/cilynx/expedition/issues/13 |
 | Wireless Phone Charging | Plug [this charging mat](https://amzn.to/3ret2SZ) into one of the USB ports on the back of the head and route the cable under the unit then you can just throw your phone in the well to charge. |
-| Wifi | Works OOTB.  Reception is a bit weak.  Works great with a hotspot in the truck, but can barely see my home wifi from the driveway even though my phone picks it up very well.  Antenna can be replaced, but I haven't found a good one yet. |
-| Built-in 4G/5G | Non-existent -- unit does not have a SIM slot |
-| Mobile connectivity | Works great OOTB with my phone's Wifi hotspot.  Works great OOTB over USB with a [Netgear M1](https://amzn.to/44uldqt).  The M1 reboots over and over if you don't have the battery in it and if you leave the battery in without driving often, the battery will die and the unit needs a few minutes of charging before it works again.  Still dialing in seamless mobile connectivity and may need to try some 4G/5G dongles, but this setup works "good enough for now". |
+| Wifi | Works OOTB.  Reception is a bit weak.  Works great with a hotspot in the truck, but can barely see my home wifi from the driveway even though my phone picks it up very well.  Antenna can be replaced, but I haven't found a better one yet. |
+| Mobile connectivity | The head does not have a SIM slot, so there is no option for native 4G/5G.  Wifi works great OOTB with my phone's Wifi hotspot.  USB connectivity works great OOTB with a [Netgear M1](https://amzn.to/44uldqt). | https://github.com/cilynx/expedition/issues/14 |
 | Front A/C Controls | Work great OOTB |
-| Rear A/C Controls | Rear Lock appears to be reversed -- rear controls work when Rear Lock is enabled on the head and the head overrides the rear controls when Rear Lock is disabled on the head. |
-| Front Heated / Cooled Seats | Not currently working -- on-screen buttons don't respond to taps.  I need to follow up with KSPIV on this one. |
+| Rear A/C Controls | Rear Lock appears to be reversed -- rear controls work when Rear Lock is enabled on the head and the head overrides the rear controls when Rear Lock is disabled on the head. | https://github.com/cilynx/expedition/issues/7 |
+| Front Heated / Cooled Seats | Not currently working -- on-screen buttons don't respond to taps. | https://github.com/cilynx/expedition/issues/8 |
 | Steering Wheel Controls | Volume Up/Down/Mute and Prev/Next work OOTB.  Other functions untested. |
 | Door Open Display | Works OOTB so long as CAN2 is not connected |
-| Speedometer / Tachometer | Don't work with or without CAN2 connected.  KSPIV recommended disconnecting CAN2 so the Door Open Display works properly and is sending me an OBDII dongle to see if we can get speedo and tach that way. |
+| Speedometer / Tachometer | Neither works.  Connecting CAN2 either behind the dash or on the OBD2 port causes the Door Open Display to freak out and speedo and tach on the head still don't work.  The real speedo and tach on the cluster work fine. |
 | AM/FM Radio | Works OOTB |
-| Pandora | Installs from Play Store and mostly works OOTB.  Sometimes you have to open up Radio then switch back to Pandora to get audio output. |
-| Equalizer | Works OOTB, but can distort at high gain |
-| Balance / Fade | L/R Balance works OOTB, but all speakers seem to be fed by the front channels.  Fading the fronts down on the head fades all speakers down and fading the rears down on the head does nothing.  Need to play around a bit with the rear controls and follow up with KSPIV.  Maybe this is similar to the Rear Lock for the A/C and I just haven't found it yet? |
-| Amplifier | Works OOTB, but distorts at lower volume levels than I would expect.  You have to select the radio to turn on the amp before any other software can make sound. |
-| Speakers | Plug and play with the Sony system in my truck.  My driver's door speaker is dead, but it was dead with the stock head as well -- need to troubleshoot, but it's not a problem w/ the KSPIV. |
+| Pandora | Installs from Play Store and mostly works OOTB.  When first booting, you have to open up Radio then switch back to Pandora to get audio output. | https://github.com/cilynx/expedition/issues/3 |
+| Equalizer | Works great OOTB |
+| Balance / Fade | Balance (L/R) works OOTB.  Fade (F/B) does not work due to how the truck is wired from the factory.  Until I get I-CAN working, you need to set the fade where you want it with the factory head and the amp/DSP will remember it when you swap back to the KSPIV. | https://github.com/cilynx/expedition/issues/2 |
+| Onboard Amplifier | You have to open the Radio app and select a station to turn on the head's amp before any other app can make sound. | https://github.com/cilynx/expedition/issues/3 |
+| Factory Amplifier / DSP | KSPIV is not connected to I-CAN at all, so you need to set up your factory amp using the factory head before you swap in the KSPIV.  I set mine to 90% volume and flat EQ, balance, and fade. | https://github.com/cilynx/expedition/issues/4 |
+| Factory Speakers | Plug and play with the Sony system in my truck.  Remember, the rear speaker connections from the head don't actually go anywhere, they just terminate in the harness under the dash.  The signal is carried to the factory amp/DSP using the front speaker connections only. | https://github.com/cilynx/expedition/issues/4 |
 | Waze | Installs from Play Store and works OOTB |
-| GPS | Works with the antenna that comes with the headunit shoved up under the dash.  Can take a minute to get lock if you don't power it up every day.  Not working with the stock Expedition antenna at this time. Can take quite a while to get lock the very first time -- try sticking the antenna on the roof to get the initial lock before hiding it in the dash. |
+| GPS | Works with the antenna that comes with the headunit shoved up under the dash.  Can take a minute to get lock if you don't power it up every day.  Not working with the stock Expedition antenna at this time. Can take quite a while to get lock the very first time -- try sticking the antenna on the roof to get the initial lock before hiding it in the dash. | https://github.com/cilynx/expedition/issues/9 |
 | YouTube | Pre-installed and working OOTB |
 | Netflix | Not available in the Play Store for Android 9.  If you write to KSPIV support, they'll send you an APK that works along with instructions on how to side-load it. |
-| Play Store | Crashed a lot at first.  After finding a work-around to updating Play Store itself, it now works as it should.  Some apps are not available as the head is running Android 9 which is pretty outdated.  KSPIV is working on an Android 11 firmware for this unit that should improve the situation. |
+| Play Store | Crashed a lot at first.  After finding a work-around to updating Play Store itself, it now works as it should.  Some apps are not available as the head is running Android 9 which is pretty outdated.  KSPIV is working on an Android 11 version that should improve the situation. |
 
 ## User Settings
 
-| Setting | Description | Working | Thoughts |
+| Setting | Description | Working | Notes |
 |-|-|-|-|
 |Autorun navi|Run preferred navigation app automatically on startup|Yes||
 |Auto Split screen in navi|Automatically size your navigation app to half the screen and bring up the Console in the other half of the screen|Yes|Waze looks better with more screen real estate, so I keep this OFF|
 |Navi volume|Navigation of the volume app|Untested||
-|Track line|Trajectory lines on backup camera display|The lines show up when forcing the reverse display, but even though the lines are curved, they don't move with the steering wheel.|Is this supposed to come over the broken CAN2 connection?|
+|Track line|Trajectory lines on backup camera display|The lines show up when forcing the reverse display, but even though the lines are curved, they don't move with the steering wheel.| https://github.com/cilynx/expedition/issues/15 |
 |Parking sound||Untested||
-|Sound attenuation when reversing|Turn down the volume when the vehicle is in reverse|Regardless of how this is set, the unit cuts both the display and the amplifier when the vehicle is in reverse.|Working with KSPIV on this in https://github.com/cilynx/expedition/issues/1 and https://github.com/cilynx/expedition/issues/3 |
+|Sound attenuation when reversing|Turn down the volume when the vehicle is in reverse|Regardless of how this is set, the unit cuts both the display and the amplifier when the vehicle is in reverse.| https://github.com/cilynx/expedition/issues/1, https://github.com/cilynx/expedition/issues/3 |
 |Touch Tone|Beep every time you touch the screen|Yes|The tone isn't nearly as annoying as other Android heads I've played with.  I actually keep it enabled on this one.|
 |ACC volume||Untested|
 |Display speed|What to show in the console.  Meter: Speedometer and Tachomoter; Compass: Compass, Lat/Long, and Altitude from GPS; Gyroscope: Pitch, Role, and GPS info|GPS stuff works.  Speedo, tach, pitch, and role do not.|Is this supposed to come over the broken CAN2 connection?|
 |Speed unit|MPH vs KM/H for the console speedometer|Yes||
-|Temp unit|°F vs °C|Unit for the A/C and header bar temperature display|Yes||
+|Temp unit|°F vs °C - unit for the A/C and header bar temperature display|Yes||
 |Sleep time|I think this is how long the unit will sleep after turned off before it powers down|Untested|When sleeping, the unit comes back up very quickly and to your prior state.  When powered down, bootup takes longer and goes to your default configured state.|
 |Reset when break down|Not sure about this one -- guessing maybe it resets to some sort of failsafe configuration when the unit crashes|Untested||
 |Brake detect|Lock out video playback unless the parking brake is on|Untested||
